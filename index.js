@@ -3,14 +3,16 @@ const fs = require("fs");
 
 let homeContent = "";
 let projectContent = "";
-let registrationContent="";
+let registrationContent="";       
 
 fs.readFile("home.html", (err, home) => {
   if (err) {
-    throw err;
+    throw err;     
   }
   homeContent = home;
-});
+}); 
+
+
 
 fs.readFile("project.html", (err, project) => {
   if (err) {
